@@ -1,0 +1,43 @@
+https://hackmd.io/@peterju/H1dkxm-xC
+請設計 4 個 Python 函式來進行列表處理：
+---1
+函式 get_even_squares(num_list):
+接受一個整數列表 num_list 作為參數
+使用【列表推導式(List Comprehension)】返回 num_list 中所有偶數的平方值列表
+函式 get_odd_cubes(num_list):
+接受一個整數列表 num_list 作為參數
+使用【迴圈】返回 num_list 中所有奇數的 3 次方值列表
+函式 get_sliced_list(num_list):
+接受一個整數列表 num_list 作為參數
+使用【切片】返回 num_list 從第 5 個元素開始到最後一個元素(包含最後一個)的子列表
+函式 format_numbers(numbers):
+接受一個數字列表 numbers 作為參數
+返回一個新列表,其中每個數字都被格式化為 8 個字元的寬度,並靠右對齊
+主程式邏輯：
+
+在程式中建立一個整數列表
+num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+分別呼叫前 3 個函式,獲取偶數平方值列表、奇數立方值列表、切片子列表
+再以上述 3 個函式的結果為基礎，呼叫最後一個函式，並搭配 print() 與 join() 進行顯示
+執行畫面
+d:\Pyap\q3>python q3_01.py
+       4,      16,      36,      64
+       1,      27,     125,     343,     729
+       5,       6,       7,       8,       9
+
+d:\Pyap\q3>
+
+---2
+
+請撰寫 Python 程式，完成以下要求：
+ 留言
+
+讀取 students.json 檔案的內容，並自動關閉檔案。
+實作以下三個函式：
+get_student_info(student_id)：根據學號返回該學生的個人資料字典，如果找不到該學生，則手動拋出 ValueError 與錯誤訊息供上層呼叫程式處理。
+add_course(student_id, course_name, course_score)：為指定學生添加一門課程及其分數，並寫回 students.json，如果找不到該學生，則手動拋出 ValueError與錯誤訊息，並使用斷言確保課程名稱與課程分數不可為空字串，供上層呼叫程式處理。
+calculate_average_score(student_data)：傳入學生的個人資料字典後，計算並返回該學生所有課程的平均分數，如果該學生沒有課程，則返回 0.0。
+在主程式中，請先確保 students.json 檔案存在與否再進行讀取。
+接下來主程式請參考【執行畫面】，並適當地捕獲和處理可能出現的例外
+
+---3
